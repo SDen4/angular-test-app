@@ -1,10 +1,28 @@
 .test-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 16px;
+
   & p {
     font-size: 18px;
+  }
+
+  & button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: orange;
+    }
   }
 }
