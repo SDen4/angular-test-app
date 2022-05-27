@@ -1,9 +1,19 @@
 <div class="test-container">
-  <p>test-component works!</p>
+  <h2>test-component works!</h2>
 
-  <button (click)="onClick()">
+  <button class="button" (click)="onClick()">
     test-component button
   </button>
 
   <p>{{ testVar }}</p>
+
+  <span class="line"></span>
+
+  <h2>TEST COUNTER</h2>
+
+  <div class="test-buttons--group">
+    <button class="button" (click)="onDecrement()">-</button>
+    <span>{{ testNumVar }}</span>
+    <button class="button button--green" (click)="onIncrement()">+</button>
+  </div>
 </div>
