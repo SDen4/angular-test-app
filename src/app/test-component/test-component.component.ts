@@ -11,6 +11,13 @@ export class TestComponentComponent implements OnInit {
   testVar = 'test variable';
   testNumVar = 0;
 
+  testArray: { name: string; age: number }[] = [
+    { name: 'Andrew', age: 43 },
+    { name: 'Mark', age: 49 },
+    { name: 'Lora', age: 61 },
+    { name: 'Migel', age: 58 },
+  ];
+
   ngOnInit(): void {}
 
   onClick(): void {

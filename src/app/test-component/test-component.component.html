@@ -1,6 +1,5 @@
 <div class="test-container">
   <h2>Test-Component Works!</h2>
-
   <button class="button" (click)="onClick()">
     test-component button
   </button>
@@ -10,10 +9,22 @@
   <span class="line"></span>
 
   <h2>Test Counter</h2>
-
   <div class="test-buttons--group">
     <button class="button" (click)="onDecrement()">-</button>
     <span>{{ testNumVar }}</span>
     <button class="button button--green" (click)="onIncrement()">+</button>
   </div>
+
+  <span class="line"></span>
+
+  <h2>Array Iteration</h2>
+  <ul class="test-list" *ngFor="let item of testArray">
+    <li>
+      <span>name: </span>
+      <span>{{ item.name }}, </span>
+
+      <span>age: </span>
+      <span>{{ item.age }}</span>
+    </li>
+  </ul>
 </div>
