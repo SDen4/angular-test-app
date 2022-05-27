@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponentComponent implements OnInit {
   constructor() {}
 
+  testVar = 'test variable';
+
   ngOnInit(): void {}
 
   onClick(): void {
