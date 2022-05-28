@@ -70,8 +70,30 @@ svg.material-icons:not(:last-child) {
 
 .card-container {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
+  width: 100%;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  & a,
+  button {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.app-test-component {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -82,7 +104,6 @@ svg.material-icons:not(:last-child) {
   background-color: #fafafa;
   height: 40px;
   width: 200px;
-  margin: 0 8px 16px;
   padding: 16px;
   display: flex;
   flex-direction: row;
@@ -90,10 +111,7 @@ svg.material-icons:not(:last-child) {
   align-items: center;
   transition: all 0.2s ease-in-out;
   line-height: 24px;
-}
-
-.card-container .card:not(:last-child) {
-  margin-right: 0;
+  margin-bottom: 10px;
 }
 
 .card.card-small {
@@ -262,6 +280,24 @@ svg#clouds {
 
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+  .card-container::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .card-wrapper {
+    flex-wrap: nowrap;
+  }
+
   .card-container > *:not(.circle-link),
   .terminal {
     width: 100%;
