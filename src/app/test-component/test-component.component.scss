@@ -7,9 +7,11 @@
   padding: 16px;
   border: 1px solid red;
   border-radius: 10px;
+  margin-right: 15px;
 
   & h2:first-child {
     margin-top: 0;
+    margin-right: 0;
   }
 }
 
