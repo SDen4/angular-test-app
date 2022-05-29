@@ -7,6 +7,12 @@
   <ul *ngFor="let item of testArray">
     <app-test-card [userName]="item.name" [userAge]="item.age"></app-test-card>
   </ul>
+
+  <span class="line"></span>
+
+  <h2>Input text</h2>
+  <h3>{{ changedText }}</h3>
+  <input type="text" (input)="onchangeHandler($event)" />
 </div>
 
 

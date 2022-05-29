@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent2Component implements OnInit {
   constructor() {}
+  ngOnInit(): void {}
 
   testArray: { name: string; age: number }[] = [
     { name: 'Andrew', age: 43 },
@@ -15,5 +16,9 @@ export class TestComponent2Component implements OnInit {
     { name: 'Migel', age: 58 },
   ];
 
-  ngOnInit(): void {}
+  // input example
+  changedText = '';
+  onchangeHandler(event: any) {
+    this.changedText = event.target.value;
+  }
 }
