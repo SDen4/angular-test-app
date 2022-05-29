@@ -4,6 +4,7 @@ import { Input, Component, OnInit } from '@angular/core';
   selector: 'app-test-card',
   templateUrl: './test-card.component.html',
   styleUrls: ['./test-card.component.scss'],
+  interpolation: ['[[', ']]'],
 })
 export class TestCardComponent implements OnInit {
   constructor() {}
