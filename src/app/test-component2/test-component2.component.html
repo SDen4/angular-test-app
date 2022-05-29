@@ -12,7 +12,7 @@
 
   <h2>Input text</h2>
   <h3>{{ changedText }}</h3>
-  <input type="text" (input)="onchangeHandler($event)" />
+  <input type="text" (input)="onchangeHandler($event)" [value]="changedText"/>
 </div>
 
 

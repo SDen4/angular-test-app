@@ -17,7 +17,7 @@ export class TestComponent2Component implements OnInit {
   ];
 
   // input example
-  changedText = '';
+  changedText = 'init value...';
   onchangeHandler(event: any) {
     this.changedText = event.target.value;
   }
