@@ -1,3 +1,12 @@
 <div class="test-container">
   <h2>Test-Component 2   Works!</h2>
+
+  <span class="line"></span>
+
+  <h2>Props to child</h2>
+  <ul *ngFor="let item of testArray">
+    <app-test-card [userName]="item.name" [userAge]="item.age"></app-test-card>
+  </ul>
 </div>
+
+
