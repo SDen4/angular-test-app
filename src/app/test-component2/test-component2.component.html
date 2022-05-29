@@ -10,7 +10,12 @@
 
   <span class="line"></span>
 
-  <h2>Input text</h2>
+  <h2
+    [ngClass]="{orange: changedText.length < 5}"
+    [class.red]="changedText.length < 2"
+  >
+  Input text</h2>
+
   <h3 [ngStyle]="{color: changedText.length > 14 ? 'red' : 'blue'}">{{ changedText }}</h3>
   <input type="text" #input (input)="onchangeHandler(input.value)" [value]="changedText"/>
   <input type="text" [(ngModel)]='changedText'/>
