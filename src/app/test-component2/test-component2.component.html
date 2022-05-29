@@ -13,6 +13,7 @@
   <h2>Input text</h2>
   <h3>{{ changedText }}</h3>
   <input type="text" #input (input)="onchangeHandler(input.value)" [value]="changedText"/>
+  <input type="text" [(ngModel)]='changedText'/>
 </div>
 
 
