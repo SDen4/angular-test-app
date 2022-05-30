@@ -3,7 +3,11 @@
 
   <span class="line"></span>
 
-  <h3 *ngIf="toggle">HTML Conditions</h3>
+  <h3 *ngIf="toggle; else noTitle">HTML Conditions</h3>
+
+  <ng-template #noTitle>
+    <span>no title...</span>
+  </ng-template>
 
   <button (click)="onclickHandler()">Hide title</button>
 </div>
