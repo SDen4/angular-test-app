@@ -10,6 +10,7 @@ export class TestComponent3Component implements OnInit {
   ngOnInit(): void {}
 
   toggle: boolean = true;
+  curDay: Date = new Date();
 
   onclickHandler() {
     this.toggle = !this.toggle;

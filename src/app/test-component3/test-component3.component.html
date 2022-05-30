@@ -10,4 +10,13 @@
   </ng-template>
 
   <button (click)="onclickHandler()">Hide title</button>
+
+  <span class="line"></span>
+
+  <h2>Pipe Date</h2>
+
+  <!-- more settings for date pipe -->
+  <!-- https://angular.io/api/common/DatePipe -->
+
+  <div>{{ curDay | date:'dd MMMM yyyy'}}</div>
 </div>
