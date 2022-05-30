@@ -9,6 +9,11 @@ import { TestComponent2Component } from './test-component2/test-component2.compo
 import { TestCardComponent } from './test-card/test-card.component';
 import { TestComponent3Component } from './test-component3/test-component3.component';
 
+import { registerLocaleData } from '@angular/common';
+import LocaleRu from '@angular/common/locales/ru';
+
+registerLocaleData(LocaleRu, 'ru');
+
 @NgModule({
   declarations: [
     AppComponent,
