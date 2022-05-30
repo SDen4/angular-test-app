@@ -11,6 +11,7 @@ export class TestCardComponent implements OnInit {
 
   @Input() userName: string = '';
   @Input() userAge: number = 0;
+  @Input() index: number = 0;
 
   ngOnInit(): void {}
 }

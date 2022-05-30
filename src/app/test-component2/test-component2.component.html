@@ -4,8 +4,8 @@
   <span class="line"></span>
 
   <h2>Props to child</h2>
-  <ul *ngFor="let item of testArray">
-    <app-test-card [userName]="item.name" [userAge]="item.age"></app-test-card>
+  <ul *ngFor="let item of testArray; let idx = index">
+    <app-test-card [userName]="item.name" [userAge]="item.age" [index]="idx"></app-test-card>
   </ul>
 
   <span class="line"></span>
