@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TestComponentComponent } from './test-component/test-component.component';
 import { TestComponent2Component } from './test-component2/test-component2.component';
 import { TestCardComponent } from './test-card/test-card.component';
+import { TestComponent3Component } from './test-component3/test-component3.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { TestCardComponent } from './test-card/test-card.component';
     TestComponentComponent,
     TestComponent2Component,
     TestCardComponent,
+    TestComponent3Component,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
