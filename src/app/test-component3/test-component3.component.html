@@ -13,10 +13,14 @@
 
   <span class="line"></span>
 
-  <h2>Pipe Date</h2>
-
   <!-- more settings for date pipe -->
   <!-- https://angular.io/api/common/DatePipe -->
 
-  <div>{{ curDay | date:'dd MMMM yyyy':'':'ru'}}</div>
+  <h2>Pipe Date</h2>
+  <div>{{ curDay| date:'dd MMMM yyyy':'':'ru'}}</div>
+
+  <span class="line"></span>
+
+  <h2>Pipe Currency</h2>
+  <div>{{ nativeCurrency | currency:'USD'}}</div>
 </div>

@@ -11,6 +11,7 @@ export class TestComponent3Component implements OnInit {
 
   toggle: boolean = true;
   curDay: Date = new Date();
+  nativeCurrency: number = 100.5;
 
   onclickHandler() {
     this.toggle = !this.toggle;
