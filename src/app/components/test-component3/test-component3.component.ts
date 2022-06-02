@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { testVarr } from '../../shared/test.service';
 
 @Component({
   selector: 'app-test-component3',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-component3.component.scss'],
 })
 export class TestComponent3Component implements OnInit {
-  constructor() {}
+  constructor(public testVarr: testVarr) {}
   ngOnInit(): void {}
 
   toggle: boolean = true;
